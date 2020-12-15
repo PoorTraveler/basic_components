@@ -1,0 +1,7 @@
+ADD_COMPILE_OPTIONS(-fno-access-control)
+aux_source_directory(../  CONDITION_SRC)
+SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin/)
+aux_source_directory(../../mutex/  MUTEX_SRC)
+ADD_EXECUTABLE(condition_unit_test  condition_variable_unit_test.cpp ${CONDITION_SRC} ${MUTEX_SRC})
+TARGET_LINK_LIBRARIES(condition_unit_test -lpthread)
+ADD_TEST(NAME condition_unit_test COMMAND condition_unit_test)
