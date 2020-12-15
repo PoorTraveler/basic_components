@@ -1,0 +1,6 @@
+ADD_COMPILE_OPTIONS(-fno-access-control)
+aux_source_directory(../  FIFO_SRC)
+SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin/)
+ADD_EXECUTABLE(fifo_unit_test  fifo_unit_test.cpp ${FIFO_SRC})
+TARGET_LINK_LIBRARIES(fifo_unit_test -lpthread)
+ADD_TEST(NAME fifo_unit_test COMMAND fifo_unit_test)
