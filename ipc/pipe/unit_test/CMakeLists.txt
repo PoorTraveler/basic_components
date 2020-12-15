@@ -1,0 +1,6 @@
+ADD_COMPILE_OPTIONS(-fno-access-control)
+aux_source_directory(../  PIPE_SRC)
+SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin/)
+ADD_EXECUTABLE(pipe_unit_test  pipe_unit_test.cpp ${PIPE_SRC})
+TARGET_LINK_LIBRARIES(pipe_unit_test -lpthread)
+ADD_TEST(NAME pipe_unit_test COMMAND pipe_unit_test)
