@@ -3,7 +3,7 @@
 
 
 using namespace std;
-using namespace ipc::namedfifo;
+using namespace ipc;
 
 //TODO:unit test
 

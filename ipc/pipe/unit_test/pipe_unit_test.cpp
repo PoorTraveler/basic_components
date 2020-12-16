@@ -1,7 +1,7 @@
 #include "pipe.h"
 #include <iostream>
 
-using namespace ipc::unnamedpipe;
+using namespace ipc;
 using namespace std;
 
 //TODO unit test

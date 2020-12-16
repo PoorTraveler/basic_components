@@ -1,7 +1,6 @@
 #include "pipe.h"
 
 namespace ipc{
-namespace unnamedpipe{
 
 Pipe::Pipe() {}
 
@@ -34,5 +33,4 @@ void Pipe::Close(){
   fd_array_[1] = -1;
 }
 
-} //namepace unnamedpipe
 } //namespace ipc

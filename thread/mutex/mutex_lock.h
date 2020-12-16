@@ -8,7 +8,6 @@
 #include "noncopyable.h"
 
 namespace pthread{
-namespace mutexlock{
 
 class MutexLock : public common::Noncopyable{
 public:
@@ -24,7 +23,6 @@ private:
     pthread_mutex_t mutex_;
 };
 
-} //namespace mutex
 } //namespace pthread
 
 #endif

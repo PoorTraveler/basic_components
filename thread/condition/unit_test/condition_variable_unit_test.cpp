@@ -1,7 +1,7 @@
 #include "condition_variable.h"
 #include <iostream>
 
-using namespace pthread::condition;
+using namespace pthread;
 using namespace std;
 
 //TODO: unit test

@@ -1,7 +1,6 @@
 #include "condition_variable.h"
 
 namespace pthread{
-namespace condition{
 
 ConditionVariable::ConditionVariable(){
     int ret = pthread_cond_init(&cond,nullptr);
@@ -32,6 +31,5 @@ void ConditionVariable::NotifyAll(){
     pthread_cond_broadcast(&cond);
 }
 
-} //namespace condition
 } //namespace pthread
 

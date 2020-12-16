@@ -1,7 +1,6 @@
 #include "mutex_lock.h"
 
 namespace pthread{
-namespace mutexlock{
 
 MutexLock::MutexLock(const pthread_mutexattr_t *mutex_attr){
     int ret = pthread_mutex_init(&mutex_,mutex_attr);
@@ -32,5 +31,4 @@ void MutexLock::Unlock(){
     pthread_mutex_unlock(&mutex_);
 }
 
-} //namespace mutex
 } //namespace pthread

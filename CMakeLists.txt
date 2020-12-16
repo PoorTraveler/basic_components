@@ -8,7 +8,8 @@ SET(COMMON_HEADER_DIR common)
 SET(THREAD_HEADER_DIR thread/mutex
                       thread/condition)
 SET(IPC_HEADER_DIR ipc/pipe
-                   ipc/fifo)
+                   ipc/fifo
+                   ipc/semaphore)
 
 INCLUDE_DIRECTORIES(${COMMON_HEADER_DIR}/
                     ${THREAD_HEADER_DIR}/
