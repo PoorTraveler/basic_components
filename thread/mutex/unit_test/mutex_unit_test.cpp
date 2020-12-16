@@ -2,8 +2,7 @@
 #include "mutex_lock_guard.h"
 #include <iostream>
 
-using namespace pthread::mutexlock;
-using namespace pthread::mutexlockguard;
+using namespace pthread;
 using namespace std;
 
 //Todo unit test

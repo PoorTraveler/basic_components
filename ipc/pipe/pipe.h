@@ -5,7 +5,6 @@
 #include <assert.h>
 
 namespace ipc{
-namespace unnamedpipe{
 
 class Pipe  {
  public:
@@ -24,6 +23,5 @@ class Pipe  {
   int fd_array_[2] = {-1, -1};
 };
 
-} //namespace unnamedpipe
 } //namespace ipc
 #endif

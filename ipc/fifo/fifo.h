@@ -8,7 +8,6 @@
 
 //named pipe
 namespace ipc{
-namespace namedfifo{
 
 class Fifo {
  public:
@@ -27,6 +26,5 @@ class Fifo {
   std::string name_;
 };
 
-} //namespace namedfifo
 } //namespace ipc
 #endif

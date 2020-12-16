@@ -5,16 +5,14 @@
 #include "noncopyable.h"
 
 namespace pthread{
-namespace mutexlockguard{
 
 class MutexLockGuard:public common::Noncopyable{
 public:
     MutexLockGuard();
     ~MutexLockGuard();
 private:
-    pthread::mutexlock::MutexLock locker;
+    pthread::MutexLock locker;
 };
 
-} // namespace mutexlockguard
 } // namespace pthread
 #endif

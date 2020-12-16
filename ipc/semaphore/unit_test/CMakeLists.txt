@@ -1,0 +1,6 @@
+ADD_COMPILE_OPTIONS(-fno-access-control)
+aux_source_directory(../  SEAMPHORE_SRC)
+SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin/)
+ADD_EXECUTABLE(seamphore_unit_test  seamphore_unit_test.cpp ${SEAMPHORE_SRC})
+TARGET_LINK_LIBRARIES(seamphore_unit_test -lpthread)
+ADD_TEST(NAME seamphore_unit_test COMMAND seamphore_unit_test)

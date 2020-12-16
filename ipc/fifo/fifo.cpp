@@ -1,7 +1,6 @@
 #include "fifo.h"
 
 namespace ipc{
-namespace namedfifo{
 
 Fifo::Fifo(const std::string& path, mode_t mode) 
     : name_(path),mode_(mode) 
@@ -42,5 +41,4 @@ bool Fifo::IsExist(const std::string& path, mode_t mode) {
   return 0 == access(path.c_str(), mode);
 }
 
-} //namespace namedfifo
 } //namespace ipc

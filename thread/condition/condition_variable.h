@@ -8,8 +8,6 @@
 #include <assert.h>
 
 namespace pthread{
-namespace condition{
-
 
 class ConditionVariable : public common::Noncopyable{
 public:
@@ -20,10 +18,9 @@ public:
     void Notify();
     void NotifyAll();
 private:
-    pthread::mutexlock::MutexLock locker;
+    pthread::MutexLock locker;
     pthread_cond_t cond{};
 };
 
-} //namespace condition
 } //namespace pthread
 #endif
